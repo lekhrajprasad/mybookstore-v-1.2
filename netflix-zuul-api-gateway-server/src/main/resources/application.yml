@@ -1,0 +1,18 @@
+eureka:
+    client:
+        service-url:
+            default-zone: http://localhost:8761/eureka
+server:
+    port: 8765
+spring:
+    application:
+        name: netflix-zuul-api-gateway-server
+logging:
+    level:
+        root: WARN
+        com.lpras: DEBUG
+        org.springframework.cloud: WARN
+        com.netflix: WARN
+        de.codecentric: WARN
+    pattern:
+        console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'

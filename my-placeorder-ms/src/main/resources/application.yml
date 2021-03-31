@@ -1,0 +1,38 @@
+spring:
+    rabbitmq:
+        addresses: amqps://xrjbysaw:ESAki5A7fkGit0EMD3q2N6Z7V_KCK69J@fox.rmq.cloudamqp.com/xrjbysaw
+    boot.admin.client.url: http://localhost:5555 #Boot Admin configuration, Actuator Admin is running on port 1234
+    datasource:
+        hikari:
+            connectionTimeout: 20000
+            maximumPoolSize: 5
+        password: lpras
+        url: "jdbc:mysql://localhost:3306/myordersdb"
+        username: lpras
+        
+    jpa:
+        show-sql: true
+        hibernate.ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+    application:
+        name: my-placeorder-ms
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka
+        healthcheck:
+            enabled: true
+server:
+    port: 7000
+
+logging:
+    level:
+         root: WARN
+         com.lpras: DEBUG
+         de.codecentric: WARN
+    pattern:
+         console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'
+#To see the h2 db console. works only when application is running on server port 8080
+#http://localhost:9000/h2-console

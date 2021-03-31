@@ -1,0 +1,38 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.3.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+}
+
+group = 'com.coursecube.bookstoreweb'
+version = '0.1.1-SNAPSHOT'
+sourceCompatibility = '14'
+
+repositories {
+	mavenCentral()
+}
+configurations.all{
+	//exclude module: 'spring-boot-starter-logging'
+}
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	implementation 'jstl:jstl:1.2'
+	implementation 'taglibs:standard:1.1.2'
+	implementation 'org.webjars:bootstrap:4.5.2'
+	implementation 'org.webjars:jquery:3.5.1'
+
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'de.codecentric:spring-boot-admin-starter-client:2.3.0' //Actuator Boot Admin dependency
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
+	//implementation 'javax.xml.bind:jaxb-api:2.3.1'
+	//runtime 'com.sun.xml.bind:jaxb-impl:2.3.1'
+	//runtime 'com.sun.xml.bind:jaxb-core:2.3.0.1'
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:2.2.5.RELEASE'
+}
+
+test {
+	useJUnitPlatform()
+}
