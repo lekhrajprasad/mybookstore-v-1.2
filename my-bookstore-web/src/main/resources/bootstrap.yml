@@ -1,0 +1,8 @@
+spring:
+    cloud:
+        config:
+            uri: http://localhost:2345
+    application:
+        name: my-bookstore-web
+server:
+    port: 5000

@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,6 +21,7 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
+@RefreshScope
 public class BookController {
     static Logger log = LoggerFactory.getLogger(BookController.class);
     
@@ -29,10 +31,15 @@ public class BookController {
     @Value("${server.port}")
     String port;
     
+    @Value("${booksearch.cloudconfig.msgupdated}")
+    String msg;
+            
+    
     @GetMapping(value = "/mybooks/{author}/{category}")
     public List<Book> getBooks(@PathVariable String author, @PathVariable String category){
         log.info("--BookController -- getBooks()---");
         System.out.println("=============================::port:::::"+port);
+        System.out.println("=============================::msg:::::"+msg);
         System.out.println(author+"\t"+category);
         return bookService.getBooks(author, category);
     }
@@ -41,6 +48,7 @@ public class BookController {
     public BookInfo getBookById(@PathVariable Integer bookId){
         log.info("--BookController -- getBookById()---");
         System.out.println("=============================::port:::::"+port);
+        System.out.println("=============================::msg:::::"+msg);
         return bookService.getBookInfo(bookId);
     }
 
