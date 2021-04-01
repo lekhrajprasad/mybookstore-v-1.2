@@ -1,0 +1,43 @@
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*' #Enabling actuator endpoint
+spring:
+    boot.admin.client.url: http://localhost:5555 #Boot Admin configuration, Actuator Admin is running on port 8080
+    application:
+        name: my-bookstore-web
+    # RabbitMQ Properties
+    rabbitmq:
+      addresses: amqps://xrjbysaw:ESAki5A7fkGit0EMD3q2N6Z7V_KCK69J@fox.rmq.cloudamqp.com/xrjbysaw
+    main:      allow-bean-definition-overriding: false
+server:
+    port: 5000
+
+
+hystrix:
+    command:
+        my-bookprice-ms:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 500000
+        my-booksearch-ms:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 500000
+        my-userrating-ms:
+            execution:
+                isolation:
+                    thread:
+                        timeoutInMilliseconds: 500000     
+logging:
+    level:
+        root: WARN
+        com.lpras: DEBUG
+        org.springframework.cloud: DEBUG
+        com.netflix: WARN
+        de.codecentric: WARN
+    pattern:
+        console: '%-5level [%thread]-${PID} %logger{36}  - %msg%n'
