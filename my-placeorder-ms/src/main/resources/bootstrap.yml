@@ -5,6 +5,6 @@ spring:
         config:
             uri: http://localhost:2345
     application:
-        name: my-bookstore-web
+        name: my-placeorder-ms
 server:
-    port: 5000
+    port: 7000
