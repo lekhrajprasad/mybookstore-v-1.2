@@ -1,0 +1,11 @@
+--- 
+server: 
+  port: 2345
+spring: 
+  application: 
+    name: cloud-config-server
+  cloud: 
+    config: 
+      server: 
+        git: 
+          uri: C:\dev\workspace\cloud-config-repo
