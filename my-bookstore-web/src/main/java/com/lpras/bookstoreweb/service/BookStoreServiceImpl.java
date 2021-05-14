@@ -29,7 +29,7 @@ import com.lpras.dto.UserRatingInfoDTO;
 public class BookStoreServiceImpl implements BookStoreService {
 	Map<Integer, BookDTO> booksMap = new LinkedHashMap<>();
 
-	@Value("${bookstore.cloudconfig.msgupdated}")
+	@Value("${bookstore.cloudconfig.msgupdated:defaultMsg}")
 	String msg;
 	
 	@Autowired

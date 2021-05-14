@@ -35,10 +35,10 @@ public class BookStoreController {
 	static Logger log = LoggerFactory.getLogger(BookStoreController.class);
 
 	@Autowired
-	BookStoreService bookStoreService;
+	private BookStoreService bookStoreService;
 	private Map<Integer, BookDTO> mycartMap = new LinkedHashMap<>();
 
-	@Value("${bookstore.cloudconfig.msgupdated}")
+	@Value("${bookstore.cloudconfig.msgupdated:defaultMsg}")
 	String msg;
 
 	@GetMapping("/")

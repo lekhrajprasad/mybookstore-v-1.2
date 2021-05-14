@@ -1,10 +1,10 @@
-package com.lpras.myconfigserver;
+package com.lpras.bookstoreweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StartCloudConfigServer {
+class StartMyBookStoreWebMSTests {
 
 	@Test
 	void contextLoads() {

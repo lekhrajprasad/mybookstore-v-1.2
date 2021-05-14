@@ -1,15 +1,17 @@
 package com.lpras.bookstoreweb;
 
+import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 import brave.sampler.Sampler;
-
-@SpringBootApplication
+@Configuration
+//@SpringBootApplication
 //@EnableFeignClients
 public class BookStoreWebConfig /* implements WebMvcConfigurer */  {
 	
