@@ -60,7 +60,7 @@ dist/
 # The file containing environment variables 
 .env
 .metadata/*
-*/.mvn/*
+##*/.mvn/*
 # Ignore IDE specific files
 .idea/
 .vscode/
