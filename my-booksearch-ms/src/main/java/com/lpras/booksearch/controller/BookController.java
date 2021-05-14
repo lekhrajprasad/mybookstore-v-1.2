@@ -26,7 +26,7 @@ public class BookController {
     static Logger log = LoggerFactory.getLogger(BookController.class);
     
     @Autowired
-    BookService bookService;
+    private BookService bookService;
     
     @Value("${server.port}")
     String port;

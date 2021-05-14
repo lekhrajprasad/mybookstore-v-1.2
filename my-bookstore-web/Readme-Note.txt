@@ -25,3 +25,8 @@ b)Includ the Css file in the JSP as follows
 To add reting use below data to avoid PRIMARY KEY CONSTRAINTS VIOLATION EXCEPTIONS
 U-12
 103
+
+
+
+
+https://natritmeyer.com/howto/reporting-aggregated-unit-and-integration-test-coverage-with-jacoco/
