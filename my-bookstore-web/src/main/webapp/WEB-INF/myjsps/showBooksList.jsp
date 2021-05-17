@@ -17,7 +17,7 @@
 		<c:import url="myheader.jsp" />
 	</div>
 	<div class="container">
-		<form action="/showAllBooks">
+		<form:form action="showAllBooks" method="get" id="command">
 			<table class="table table-striped table-bordered table-light myfont">
 				<tr>
 					<td><select name="author" class="form-control mytext">
@@ -41,7 +41,7 @@
 				</tr>
 
 			</table>
-		</form>
+		</form:form>
 	</div>
 	<div class="container">
 		<table class="table table-striped table-bordered table-light myfont">

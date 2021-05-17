@@ -13,22 +13,22 @@
 		<ul class="navbar-nav mr-auto mt-2 mt-lg-1">
 			<li class="nav-item active">
 				<h4>
-					<a href=<c:out value='/showRatingsForm' /> class="nav-link"><c:out value="Rate the books" /></a>
+					<a href=<c:out value='showRatingsForm' /> class="nav-link"><c:out value="Rate the books" /></a>
 				</h4>
 			</li>
 			<li class="nav-item active">
 				<h4>
-					<a href="/showMyRatings" class="nav-link">Show My Ratings</a>
+					<a href="showMyRatings" class="nav-link">Show My Ratings</a>
 				</h4>
 			</li>
 			<li class="nav-item active">
 				<h4>
-					<a href="/mylogin" class="nav-link">Login</a>
+					<a href="mylogin" class="nav-link">Login</a>
 				</h4>
 			</li>
 			<li class="nav-item active">
 				<h4>
-					<a href="/myregister" class="nav-link">Register</a>
+					<a href="myregister" class="nav-link">Register</a>
 				</h4>
 			</li>
 		</ul>

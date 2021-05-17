@@ -16,7 +16,7 @@
 		<c:import url="myheader.jsp" />
 	</div>
 	<div class="container">
-		<form:form action="/addMyRating" modelAttribute="myUserRating">
+		<form:form action="addMyRating" modelAttribute="myUserRating">
 			<table class="table table-striped table-bordered table-light myfont">
 				<tr>
 					<th colspan="2" align="center">Provide Your Rating</th>

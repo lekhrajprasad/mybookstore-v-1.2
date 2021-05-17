@@ -6,5 +6,7 @@ spring:
             uri: http://localhost:2345
     application:
         name: my-bookstore-web
-server:
-    port: 5000
+#server.port is design to work with embedded tomcat, hence commenting
+#server:
+#    port: 5000
+#    contextpath: my-bookstore-web
