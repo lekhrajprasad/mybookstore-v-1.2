@@ -2,6 +2,8 @@ package com.lpras.booksearch;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
@@ -13,8 +15,8 @@ import springfox.documentation.spring.web.plugins.Docket;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
-
-@SpringBootApplication
+@Configuration
+//@SpringBootApplication
 public class SwaggerConfig {
 
    /* @Bean
