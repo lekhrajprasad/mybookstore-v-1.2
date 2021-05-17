@@ -29,7 +29,7 @@ public class OrderController {
     @Value("${server.port}")
     String port;
     
-    @Value("${placeorder.cloudconfig.msgupdated}")
+    @Value("${placeorder.cloudconfig.msgupdated:defaultMsg}")
     String msg;
 
 	/*

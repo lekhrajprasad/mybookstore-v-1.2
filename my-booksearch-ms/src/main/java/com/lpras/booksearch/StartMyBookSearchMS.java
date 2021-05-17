@@ -31,7 +31,7 @@ public class StartMyBookSearchMS implements CommandLineRunner {
     @Override
     public void run(String... args) {
         //Start-UP Tasks
-        log.info(" MyBookPrice - Launched.... ");
+        log.info(" StartMyBookSearchMS - Launched.... ");
     }
     @Bean
     public Sampler defaultSampler() {

@@ -1,6 +1,11 @@
 --- 
 server: 
   port: 2345
+  
+eureka:
+    client:
+        service-url:
+            default-zone: http://localhost:8761/eureka
 spring: 
   application: 
     name: cloud-config-server

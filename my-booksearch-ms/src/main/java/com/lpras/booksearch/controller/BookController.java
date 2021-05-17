@@ -28,10 +28,10 @@ public class BookController {
     @Autowired
     private BookService bookService;
     
-    @Value("${server.port}")
+    @Value("${server.port}:8000")
     String port;
     
-    @Value("${booksearch.cloudconfig.msgupdated}")
+    @Value("${booksearch.cloudconfig.msgupdated:defaultMsg}")
     String msg;
             
     
