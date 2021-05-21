@@ -3,7 +3,7 @@ spring:
         active: dev
     cloud:
         config:
-            uri: http://localhost:2345
+            uri: http://103.141.117.28:2345
     application:
         name: my-bookstore-web
 #server.port is design to work with embedded tomcat, hence commenting
