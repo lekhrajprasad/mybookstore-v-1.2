@@ -12,8 +12,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 import com.lpras.ribbon.MyRibbonConfig;
 
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
-
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
