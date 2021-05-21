@@ -15,7 +15,6 @@ import com.lpras.ribbon.MyRibbonConfig;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
-@EnableSwagger2
 @EnableEurekaClient
 @EnableFeignClients
 @RibbonClient(name="customRibbonConfig",configuration = MyRibbonConfig.class)

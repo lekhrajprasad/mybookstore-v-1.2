@@ -2,7 +2,7 @@
 <%! String str = "Rate the books"; %>
 <nav class="navbar nvbar-expand-lb navbar-dark bg-dark sticky-top">
 	<h4>
-		<a href="/" class="navbar-brand">My Book Store</a>
+		<a href="index" class="navbar-brand">My Book Store</a>
 	</h4>
 	<button class="navbar-togler" type="button" data-toggle="collapse"
 		data-target="#navbarColor01" aria-controls="navbarColor01"
