@@ -1,4 +1,3 @@
-/*
 package com.lpras.bookstoreweb.controller;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -51,4 +50,3 @@ public class BookStoreControllerTests {
 	}
 	
 }
-*/
