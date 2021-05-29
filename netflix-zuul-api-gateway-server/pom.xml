@@ -17,6 +17,8 @@
 
 	<properties>
 		<java.version>15</java.version>
+		<maven.compiler.source>15</maven.compiler.source>
+		<maven.compiler.target>15</maven.compiler.target>
 		<spring-cloud.version>Hoxton.SR10</spring-cloud.version>
 	</properties>
 
