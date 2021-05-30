@@ -13,4 +13,5 @@ spring:
     config: 
       server: 
         git: 
-          uri: C:\dev\workspace\cloud-config-repo
+          #uri: C:\dev\workspace\cloud-config-repo
+          uri:https://github.com/lekhrajprasad/cloud-config-repo.git
