@@ -7,3 +7,9 @@ server:
 spring:
     application:
         name: netflix-eureka-naming-server
+logging:
+  level:
+    root: DEBUG
+  file:
+    path: './logs/${spring.application.name}'
+    name: ${logging.file.path}/app.log
